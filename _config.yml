@@ -39,7 +39,7 @@ avatar: "/img/ricky.jpg"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Ricardo Noriega
-  email: "ricardonor@gmail.com.com"
+  email: "ricardonor@gmail.com"
   github: oglok    # eg. daattali
   twitter: rickynds   # eg. daattali
 
@@ -47,7 +47,7 @@ author:
 footer-links-active:
   rss: false
   facebook: false
-  email: false
+  email: true
   twitter: true
   github: true
   linkedin: false
