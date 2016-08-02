@@ -25,7 +25,7 @@ description: Telling what I did and how I did it!
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Learn markdown: "http://www.markdowntutorial.com/"
+    #- Learn markdown: "http://www.markdowntutorial.com/"
     - My Github: "https://github.com/oglok"
   Author's home: "http://oglok.github.io"
 
