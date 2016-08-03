@@ -2,7 +2,7 @@
 layout: post
 title: Fedora in a MacBook Pro
 subtitle: Tweaks & Tricks to make it work
-bigimg: https://c1.staticflickr.com/3/2212/2516872195_3597dabcbc.jpg
+bigimg: /img/fedora.jpg
 ---
 
 Some months ago I got a MacBook Pro 13.3 for work, and since I'm much more comfortable in a Linux environment, I decided to install Fedora. I really like Apple's hardware, especially the retina display, but for me, Fedora was the right OS to work with.
@@ -50,7 +50,7 @@ Reboot and bang! it's working...
 
 Same kind of issue with the FacetimeHD camera integrated in the MacBooks. However, there is a great effort building a reverse-engineered driver that make it compatible with most of Linux/GNU distros:
 
-https://github.com/patjak/bcwc_pcie
+(https://github.com/patjak/bcwc_pcie)
 
 In order to build the driver succesfully, I'd recommend to install the following packages and make the build as **root**:
 
@@ -62,23 +62,23 @@ sudo dnf install kernel-devel
 There is a problem extracting the firmware so a very good friend of mine (Jean-Philippe Jung) has stored it here.
 Get the camera firmware (v1.43 as of OS X 10.11 El Capitan) from: 
 
-https://www.dropbox.com/s/rt1o0enqo361o9b/firmware.bin?dl=0
+(https://www.dropbox.com/s/rt1o0enqo361o9b/firmware.bin?dl=0)
 
 Firmware has to be copied to /usr/lib/firmware/facetimehd/firmware.bin
 
 NOTE: This driver has been around for a while and it was valid up to Fedora 23. For Fedora 24 (kernel 4.5), there is this other fork that works fine (even the firmware extraction):
 
-https://github.com/engstk/bcwc_pcie
+(https://github.com/engstk/bcwc_pcie)
 
 ### Backlight
 
-See: https://github.com/patjak/mba6x_bl
+See: (https://github.com/patjak/mba6x_bl)
 
 ## Software and cuties
 
 Some time ago I saw this video on youtube and it's kind of my reference post-installation:
 
-https://www.youtube.com/watch?v=TQ68l10Fy5M
+(https://www.youtube.com/watch?v=TQ68l10Fy5M)
 
 It explains very cool things like Gnome Tweak Tools, Fedy, Fusion Repos and other bunch of useful stuff. I'm gonna list some of my daily work applications:
 
