@@ -8,7 +8,7 @@ Some months ago I got a MacBook Pro 13.3 for work, and since I'm much more comfo
 
 So let's see what I did in order to install Fedora 24.
 
-##Boot Media
+## Boot Media
 
 Still running OS X, download Fedora 24 Workstation ISO file from the following [link](https://getfedora.org/workstation/download/). Then, follow these steps:
 
@@ -23,12 +23,43 @@ Still running OS X, download Fedora 24 Workstation ISO file from the following [
 
 If you want to make a dual boot system (in order to keep Mac OS X), I suggest to open diskutil graphic application and make an empty partition of your disk.
 
-##Installation
+## Installation
 
 Insert the USB drive where Fedora 24 ISO has been located and restart the laptop. Make sure to press Alt when it's booting up. That way, you will be able to choose Fedora from the USB stick.
 
 There are dozens of tutorials about how to install Fedora in general. Just follow the steps from the screen and configure date/timezone, users, network, partition table, etc.
 
 Once the process has finished, remove the USB stick and reboot the system. Now, GRUB boot loader will show up and you will be able to boot Fedora 24!
+
+## OMG: I cannot boot Mac OS X!
+
+## Fixing things that are not working
+
+### Wireless Card
+
+It really depends on the Wireless Network Card your MacBook has got, but in many ocassions, Wifi connection doesn't work out of the box. It has a very simple solution:
+
+~~~
+	sudo dnf install akmod-wl
+~~~
+
+Reboot and bang! it's working...
+
+### Camera
+
+Same kind of issue with the FacetimeHD camera integrated in the MacBooks. However, there is a great effort building a reverse-engineered driver that make it compatible with most of Linux/GNU distros:
+
+	<https://github.com/patjak/bcwc_pcie>
+
+There is a problem extracting the firmware so a very good friend of mine (Jean-Philippe Jung) has stored it here.
+Get the camera firmware (v1.43 as of OS X 10.11 El Capitan) from: 
+
+	<https://www.dropbox.com/s/rt1o0enqo361o9b/firmware.bin?dl=0>
+
+Firmware has to be copied to /usr/lib/firmware/facetimehd/firmware.bin
+
+NOTE: This driver has been around for a while and it was valid up to Fedora 23. For Fedora 24 (kernel 4.5), there is this other fork that works fine (even the firmware extraction):
+
+	<https://github.com/engstk/bcwc_pcie>
 
 
