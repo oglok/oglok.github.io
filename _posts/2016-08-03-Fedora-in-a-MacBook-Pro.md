@@ -50,7 +50,7 @@ Reboot and bang! it's working...
 
 Same kind of issue with the FacetimeHD camera integrated in the MacBooks. However, there is a great effort building a reverse-engineered driver that make it compatible with most of Linux/GNU distros:
 
-[https://github.com/patjak/bcwc_pcie]()
+[https://github.com/patjak/bcwc_pcie](https://github.com/patjak/bcwc_pcie)
 
 In order to build the driver succesfully, I'd recommend to install the following packages and make the build as **root**:
 
@@ -68,17 +68,17 @@ Firmware has to be copied to /usr/lib/firmware/facetimehd/firmware.bin
 
 NOTE: This driver has been around for a while and it was valid up to Fedora 23. For Fedora 24 (kernel 4.5), there is this other fork that works fine (even the firmware extraction):
 
-(https://github.com/engstk/bcwc_pcie)
+[https://github.com/engstk/bcwc_pcie)](https://github.com/engstk/bcwc_pcie)
 
 ### Backlight
 
-See: (https://github.com/patjak/mba6x_bl)
+See: [https://github.com/patjak/mba6x_bl](https://github.com/patjak/mba6x_bl)
 
 ## Software and cuties
 
 Some time ago I saw this video on youtube and it's kind of my reference post-installation:
 
-(https://www.youtube.com/watch?v=TQ68l10Fy5M)
+[https://www.youtube.com/watch?v=TQ68l10Fy5M)](https://www.youtube.com/watch?v=TQ68l10Fy5M)
 
 It explains very cool things like Gnome Tweak Tools, Fedy, Fusion Repos and other bunch of useful stuff. I'm gonna list some of my daily work applications:
 
