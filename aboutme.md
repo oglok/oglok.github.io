@@ -1,16 +1,22 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Who's this guy!
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Ricardo Noriega. I work as NFV Engineer for the CTO Office at Red Hat.
+I'm passionate about emerging technologies & OpenSource.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+What do I do to feed my soul?
 
-What else do you need?
+- To play guitar and any other instrument that's next to me.
+- To take photographs
 
-### my history
+What do I do to feed my body?
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+- Surf
+- Snowboard
+- Good food! :)
+
+I love my girlfriend, my family and my friends... whatelse?
+
