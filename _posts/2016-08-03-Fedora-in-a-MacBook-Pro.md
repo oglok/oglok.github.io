@@ -50,7 +50,7 @@ Reboot and bang! it's working...
 
 Same kind of issue with the FacetimeHD camera integrated in the MacBooks. However, there is a great effort building a reverse-engineered driver that make it compatible with most of Linux/GNU distros:
 
-[https://github.com/patjak/bcwc_pcie]
+[https://github.com/patjak/bcwc_pcie]()
 
 In order to build the driver succesfully, I'd recommend to install the following packages and make the build as **root**:
 
