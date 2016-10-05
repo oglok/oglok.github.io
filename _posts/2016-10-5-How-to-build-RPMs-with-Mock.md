@@ -2,7 +2,7 @@
 layout: post
 title: How to Build RPMs (with Mock)
 subtitle: ...and contribute to RDO
-bigimg: /img/rpm.jpg
+bigimg: /img/rpm.png
 ---
 
 For the past weeks I've been going through the process of packaging with the intention of contributing to RDO Community.
