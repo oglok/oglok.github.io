@@ -71,7 +71,7 @@ Being networking-bgpvpn the name of the package in pip repositories, or just loc
 
 Spec file: $URL_SPEC
 
-##HOW TO CREATE THE SRC.RPM
+## HOW TO CREATE THE SRC.RPM
 
 Next step would be to create the srpm file. In order to do that, we recommend to use the tool “mock”:
 
@@ -128,7 +128,7 @@ The output of this execution is the srpm (/var/lib/mock/dlrn-centos7-x86_64/resu
 Spec file: $URL_SPEC
 SRPM file: $URL_SRPM
 
-##CHECK ERRORS DOING A REBUILD
+## CHECK ERRORS DOING A REBUILD
 
 pypi2rpm tool is very useful to create a first draft of the spec file, but it introduces some errors that must be fixed. A rebuild indicating the target platform and the recently build srpm will do the job. I’d recommend to copy the srpm to the local folder to have a copy of it:
 
@@ -202,7 +202,7 @@ Requires:   python-%{pypi_name} = %{version}-%{release}
 Requires:   python-%{pypi_name} = %{upstream_version}-%{release}
 ~~~
 
-##MOCK CHROOT
+## MOCK CHROOT
 
 During the rebuild process of the package, mock will create a chroot where the installation of the package will happen. This is an isolated environment where all dependencies of our project will be installed, and tests will be executed. Sometimes, the result of tests executed manually or during rebuild process can differ. This unexpected behaviour could be caused by different versions of our dependencies. In order to get into the chroot environment, mock provides an option called shell:
 
@@ -262,7 +262,7 @@ testr failing
 
 Or whatever tool is being used for testing.
 
-##COMMENTS
+## COMMENTS
 
 It is obvious than a couple of weeks working on this does not make you an expert whatsoever and of course, many errors and issues will not be covered here, but this is just my experience.
 I hope it will help and you can drop me an email if you have any question about the process. See you in the next post!
