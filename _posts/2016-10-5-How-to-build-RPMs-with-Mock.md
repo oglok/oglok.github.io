@@ -31,7 +31,7 @@ pyp2rpm -p 2 networking-bgpvpn
 
 The output of this tools is a nice start, but it will require some changes. RDO maintainers have a set of templates and examples that are very useful:
 
-https://github.com/openstack-packages/openstack-example-spec
+[https://github.com/openstack-packages/openstack-example-spec](https://github.com/openstack-packages/openstack-example-spec)
 
 One best practice would be to separate tests into a different package and set their execution as a condition to let the package get build. As you can see in the following file (https://github.com/openstack-packages/openstack-example-spec/blob/master/openstack-example-tests.spec) the checking condition will look like this:
 
@@ -88,7 +88,7 @@ usermod -a -G mock [User name]
 
 Copy the following configuration file to /etc/mock:
 
-https://gist.githubusercontent.com/lukehinds/856cb55b8f5b480d9e641f8812749178/raw/97f813e30c89090247e5eb4d5bdca2c087b377a1/dlrn.cfg 
+[https://raw.githubusercontent.com/oglok/dlrn_config/master/dlrn.cfg](https://raw.githubusercontent.com/oglok/dlrn_config/master/dlrn.cfg)
 
 “Mock” is able to build rpms to a specific target such Fedora, CentOS, etc. With this config file, you are creating a new target platform named dlrn (Delorean).
 
@@ -104,10 +104,10 @@ The tarball will be located in the dist folder within the project directory.
 
 If you want to use a stable branch or release version, get the tarball file from the following link:
 
-http://tarballs.openstack.org/
+[http://tarballs.openstack.org/](http://tarballs.openstack.org/)
 
 
-Another location for tarballs when not in openstack, is https://pypi.python.org/pypi 
+Another location for tarballs when not in openstack, is [https://pypi.python.org/pypi](https://pypi.python.org/pypi) 
 
 Let’s create the srpm file. To do that execute the following command:
 
@@ -169,9 +169,9 @@ Python-oslosphinx does not exist as rpm package within Centos repos, but it’s 
 
 If you want to check for existing packages, here it’s a good link:
 
-http://buildlogs.centos.org/centos/7/cloud/x86_64/openstack-newton/
+[http://buildlogs.centos.org/centos/7/cloud/x86_64/openstack-newton/](http://buildlogs.centos.org/centos/7/cloud/x86_64/openstack-newton/)
 
-If it’s not in CentOS, but you find the RPM in Fedora repo (https://admin.fedoraproject.org/pkgdb/) just include that dependency in a local repo, and indicate that in the bugzilla.
+If it’s not in CentOS, but you find the RPM in Fedora repo ([https://admin.fedoraproject.org/pkgdb/](https://admin.fedoraproject.org/pkgdb/)) just include that dependency in a local repo, and indicate that in the bugzilla.
 
 About python-hacking, it is recommended not to put requirements over top versions. Just remove them.
 
