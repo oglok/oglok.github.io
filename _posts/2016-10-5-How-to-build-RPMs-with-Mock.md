@@ -16,12 +16,12 @@ In a future post, I'll be explaining how to use DLRN, which is the OpenStack pro
 
 First of all, open a bugzilla in [http://bugzilla.redhat.com](http://bugzilla.redhat.com) with the following fields:
 
-*Product: RDO
-*Component: Package Review
-*Summary: New package: $NAME
-*Comments: You have to add two files there the spec and the src.rpm
+* Product: RDO
+* Component: Package Review
+* Summary: New package: $NAME
+* Comments: You have to add two files there the spec and the src.rpm
 
-##HOW TO CREATE THE SPEC
+## HOW TO CREATE THE SPEC
 
 If there is already a python package that could be installed via pip, there is a nice software that makes the spec file for you. For instance:
 
