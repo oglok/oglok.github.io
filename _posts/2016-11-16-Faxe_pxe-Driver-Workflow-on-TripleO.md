@@ -76,7 +76,7 @@ For introspection, PXE booting must be configured and nodes need to be rebooted 
 
 The tricky process comes with the deployment. Before launching the deployment, nodes must be powered off. Let's show the state in Ironic database:
 
-
+~~~
 [stack@undercloud ~]$ openstack baremetal node list
 +--------------------------------------+------+--------------------------------------+-------------+--------------------+-------------+
 | UUID                                 | Name | Instance UUID                        | Power State | Provisioning State | Maintenance |
@@ -85,7 +85,7 @@ The tricky process comes with the deployment. Before launching the deployment, n
 | 1b224050-45c1-46ee-9cf7-5df88479dfc9 | None |                                      | power off   | available          | False       |
 | fa38b21a-8521-4ebf-8af8-abe7351a2bb1 | None |                                      | power off   | available          | False       |
 +--------------------------------------+------+--------------------------------------+-------------+--------------------+-------------+
-
+~~~
 
 You must configure once again in the power management system from your hardware to make a one time boot via PXE. Then power off your target nodes and launch deployment such:
 
@@ -97,6 +97,7 @@ The undercloud will start creating a new Heat stack with lots of resources and v
 
 At some point, nodes will be in a "waiting call-back" state such:
 
+~~~
 [stack@undercloud ~]$ openstack baremetal node list
 +--------------------------------------+------+--------------------------------------+-------------+----------------------+-------------+
 | UUID                                 | Name | Instance UUID                        | Power State | Provisioning State   | Maintenance |
@@ -105,10 +106,11 @@ At some point, nodes will be in a "waiting call-back" state such:
 | 1b224050-45c1-46ee-9cf7-5df88479dfc9 | None | 5ba04bac-8a71-484b-9f15-d8d56f0df876 | power on    | deploy wait-callback | False       |
 | fa38b21a-8521-4ebf-8af8-abe7351a2bb1 | None | 02840b27-08e1-4e7e-b028-97b312dd1bd3 | power on    | deploy wait-callback | False       |
 +--------------------------------------+------+--------------------------------------+-------------+----------------------+-------------+
+~~~
 
 POWER UP YOUR NODES! This is the first milestone where you will need to interact with your servers. Once the three nodes are up & running, the provisioning state will change to "Deploying" state. It will take a little bit of time but it will end up in "Active" state.
 
-
+~~~
 [stack@undercloud ~]$ openstack baremetal node list
 +--------------------------------------+------+--------------------------------------+-------------+--------------------+-------------+
 | UUID                                 | Name | Instance UUID                        | Power State | Provisioning State | Maintenance |
@@ -117,6 +119,7 @@ POWER UP YOUR NODES! This is the first milestone where you will need to interact
 | 1b224050-45c1-46ee-9cf7-5df88479dfc9 | None | 5ba04bac-8a71-484b-9f15-d8d56f0df876 | power on    | active             | False       |
 | fa38b21a-8521-4ebf-8af8-abe7351a2bb1 | None | 02840b27-08e1-4e7e-b028-97b312dd1bd3 | power on    | active             | False       |
 +--------------------------------------+------+--------------------------------------+-------------+--------------------+-------------+
+~~~
 
 The deployment process has powered off your nodes and it's waiting to perform configuration over the images that are installed in the servers. If you check the power status of your servers it will indicate: OFF. HURRY UP! POWER THEM UP AGAIN!
 
