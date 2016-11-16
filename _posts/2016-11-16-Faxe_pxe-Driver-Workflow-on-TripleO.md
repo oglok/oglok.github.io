@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Build RPMs (with Mock)
-subtitle: ...and contribute to RDO
+title: How to use TripleO with fake_pxe driver
+subtitle: ...and when to reboot servers
 bigimg: /img/tripleo.png
 ---
 
