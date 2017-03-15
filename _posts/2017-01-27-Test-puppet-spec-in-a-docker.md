@@ -5,6 +5,7 @@ subtitle: ...and don't understand Ruby
 bigimg: /img/puppet.jpg
 tags:
   nfvpe
+category: nfvpe
 ---
 
 Everytime I need to test something that requires installing packages o messing up my laptop's configuration, I tend to create a development environment.
