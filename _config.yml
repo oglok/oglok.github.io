@@ -95,7 +95,7 @@ defaults:
       show-avatar: true
 
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
-link-tags: true
+link-tags: false
 
 # Exclude these files from production site
 exclude:
@@ -155,5 +155,7 @@ gems:
   - jekyll-paginate
   - jekyll-feed
 
+feed:
+  path: nfvpe.xml
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
