@@ -2,7 +2,7 @@
 layout: post
 title: Developing a TripleO composable service
 subtitle: ...it's not that hard!
-bigimg: /img/tripleo.jpg
+bigimg: /img/tripleo.png
 tags:
   nfvpe
 category: nfvpe
