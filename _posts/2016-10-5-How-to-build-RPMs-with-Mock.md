@@ -178,8 +178,8 @@ About python-hacking, it is recommended not to put requirements over top version
 Another good practice is to include the following MACRO at the beginning of the spec file:
 
 ~~~ 
-%global pypi_name networking-bgpvpn                                                                                                                                                                     
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}  
+%global pypi_name networking-bgpvpn
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 ~~~
 
 This macro will take the upstream version to name you package. Pypi2rpm tool will put the pypi_version macro, so you will have to replace it manually:
@@ -207,7 +207,7 @@ Requires:   python-%{pypi_name} = %{upstream_version}-%{release}
 During the rebuild process of the package, mock will create a chroot where the installation of the package will happen. This is an isolated environment where all dependencies of our project will be installed, and tests will be executed. Sometimes, the result of tests executed manually or during rebuild process can differ. This unexpected behaviour could be caused by different versions of our dependencies. In order to get into the chroot environment, mock provides an option called shell:
 
 ~~~
-mock -r dlrn shell                                                                                                                                        
+mock -r dlrn shell
 
 INFO: mock.py version 1.2.20 starting (python version = 3.5.1)...
 Start: init plugins
