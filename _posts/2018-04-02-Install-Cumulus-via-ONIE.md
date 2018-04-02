@@ -26,7 +26,7 @@ config *{
 We will connect to the console such:
 
 ~~~
-console myToR.oot.lab.eng.rdu2.redhat.com
+console myToR.oot.lab.mydomain.com
 
 ~~~
 
