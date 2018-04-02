@@ -2,7 +2,7 @@
 layout: post
 title: Install Cumulus Linux via ONIE
 subtitle: on EdgeCore switch, but it doesn't matter
-bigimg: /img/tripleo.png
+bigimg: /img/cumulus-linux.png
 ---
 
 This quickstart tutorial will guide you through the steps to install Cumulus Linux via ONIE. ONIE (Open Network Install Environment) is a small operating system, pre-installed on bare metal network switches, that provides an environment for automated provisioning.
@@ -30,7 +30,7 @@ console myToR.oot.lab.eng.rdu2.redhat.com
 
 ~~~
 
-![Console](img/cumus_onie/1.png "Console")
+![Console](/img/cumus_onie/1.png "Console")
 
 
 # Mount a TFTP server
@@ -45,7 +45,7 @@ sudo systemctl start tftp
 sudo systemctl status tftp
 ~~~
 
-![TFTP](img/cumus_onie/2.png "TFTP Server")
+![TFTP](/img/cumus_onie/2.png "TFTP Server")
 
 
 Copy the bin file to /var/lib/tftpboot (default folder for the tftp server):
@@ -73,13 +73,13 @@ ONIE:/ # onie-nos-install tftp://x.x.x.x/cumulus-linux-3.5.3-bcm-amd64.bin
 ~~~
 
 
-![Fetching](img/cumus_onie/3.png "Fetching Image")
+![Fetching](/img/cumus_onie/3.png "Fetching Image")
 
-![Boot](img/cumus_onie/4.png "Boot loader")
+![Boot](/img/cumus_onie/4.png "Boot loader")
 
-![Install](img/cumus_onie/5.png "Installation")
+![Install](/img/cumus_onie/5.png "Installation")
 
-![Login](img/cumus_onie/6.png "Login")
+![Login](/img/cumus_onie/6.png "Login")
 
 The default username and password are:
 
