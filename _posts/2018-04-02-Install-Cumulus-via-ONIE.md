@@ -3,6 +3,9 @@ layout: post
 title: Install Cumulus Linux via ONIE
 subtitle: on EdgeCore switch, but it doesn't matter
 bigimg: /img/cumulus-linux.png
+tags:
+  nfvpe
+category: nfvpe
 ---
 
 This quickstart tutorial will guide you through the steps to install Cumulus Linux via ONIE. ONIE (Open Network Install Environment) is a small operating system, pre-installed on bare metal network switches, that provides an environment for automated provisioning.
