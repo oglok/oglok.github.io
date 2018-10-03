@@ -32,7 +32,8 @@ The interesting part of this link is the following text:
 A UDP unicast architecture provides a virtual network which enables connections between QEMU instances using QEMU's UDP infrastructure. The xml "source" address is the endpoint address to which the UDP socket packets will be sent from the host running QEMU. The xml "local" address is the address of the interface from which the UDP socket packets will originate from the QEMU host.
 ~~~
 
-UDP unicast tunnels give us the possibility to emulate point to point connections among different virtual machines running on the same host, which turns out to be a very smart solution to interconnect virtualized switches/routers with servers in any desired topology.
+UDP unicast tunnels give us the possibility to emulate point to point connections among different virtual machines running on the same host,
+which turns out to be a very smart solution to interconnect virtualized switches/routers with servers in any desired topology.
 
 # Hands-on!!
 
@@ -165,72 +166,4 @@ It has been a lot of fun playing with this, and it gives a lot of flexibility to
 If you have any question about the playbook, or any other subject, contact me via twitter, email, etc
 
 [https://oglok.github.io/aboutme/](https://oglok.github.io/aboutme/)
-
-
-
-~~~
-console myToR.oot.lab.mydomain.com
-
-~~~
-
-![Console](/img/cumus_onie/1.png "Console")
-
-
-# Mount a TFTP server
-
-We need to locate the Cumulus Linux bin file in a TFTP server. You need to get an account to download the image file and take into account you will have to choose architecture of your switch (x86, ARM, and also the ASICs). Please, if possible, pick a server within the same network as the switch is located. Otherwise, fetching the image will take longer and eventually time out.
-
-Go to the server where you want to start the TFTP server and:
-
-~~~
-sudo yum install -y tftp-server
-sudo systemctl start tftp
-sudo systemctl status tftp
-~~~
-
-![TFTP](/img/cumus_onie/2.png "TFTP Server")
-
-
-Copy the bin file to /var/lib/tftpboot (default folder for the tftp server):
-
-sudo cp cumulus-linux-3.5.3-bcm-amd64.bin /var/lib/tftpboot/
-
-
-# Install Cumulus Linux
-
-Now that the Cumulus Linux is located in the TFTP server, ONIE will allow us to fetch the image and install the firmware.
-
-First remember to disable discovery mode:
-
-~~~
-ONIE: Starting ONIE Service Discovery              
-ONIE:/ # onie-discovery-stop 
-discover: installer mode detected.                 
-Stopping: discover... done.
-~~~
-
-And execute the installation command:
-
-~~~
-ONIE:/ # onie-nos-install tftp://x.x.x.x/cumulus-linux-3.5.3-bcm-amd64.bin
-~~~
-
-
-![Fetching](/img/cumus_onie/3.png "Fetching Image")
-
-![Boot](/img/cumus_onie/4.png "Boot loader")
-
-![Install](/img/cumus_onie/5.png "Installation")
-
-![Login](/img/cumus_onie/6.png "Login")
-
-The default username and password are:
-
-~~~
-cumulus/CumulusLinux!
-~~~
-
-Finally, a user guide for this version of Cumulus Linux can be found here:
-
-[https://docs.cumulusnetworks.com/display/DOCS?preview=/7112747/7114050/Cumulus%20Linux%203.5.3%20User%20Guide.pdf](https://docs.cumulusnetworks.com/display/DOCS?preview=/7112747/7114050/Cumulus%20Linux%203.5.3%20User%20Guide.pdf)
 
