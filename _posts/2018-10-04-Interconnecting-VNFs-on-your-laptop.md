@@ -139,7 +139,7 @@ The XML shows three types of interfaces for the same VM:
       <model type='virtio'/>
     </interface>
 
-    {% for link in node.connections | default([]) %}
+    \{% for link in node.connections | default([]) %}
     {% if link.type | default('udp') == 'udp' %}
     <interface type='udp'>
       <source address='127.0.0.1' port='{{ link.s_port }}'>
@@ -148,7 +148,7 @@ The XML shows three types of interfaces for the same VM:
       <model type='virtio'/>
     </interface>
     {% endif %}
-    {% endfor %}
+    \{% endfor %}
 
     <serial type='tcp'>
       <source mode='bind' host='0.0.0.0' service='{{ node.console_port }}' tls='no'/>
