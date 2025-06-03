@@ -33,7 +33,7 @@ To bring LLM capabilities to Obsidian, install the **Smart Second Brain** commun
 
 ## Why Use the NVIDIA Jetson AGX?
 
-The [NVIDIA Jetson AGX Orin](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-agx-orin/) is a compact, high-performance device designed for edge AI workloads. It features a powerful GPU and runs CUDA-enabled software, making it perfect for running local LLMs without depending on the cloud. In this case, we are using Red Hat Enterprisa Linux 9.5, a fully supported distribution on this device with the NVIDIA drivers installed.
+The [NVIDIA Jetson AGX Orin](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/) is a compact, high-performance device designed for edge AI workloads. It features a powerful GPU and runs CUDA-enabled software, making it perfect for running local LLMs without depending on the cloud. In this case, we are using Red Hat Enterprisa Linux 9.5, a fully supported distribution on this device with the NVIDIA drivers installed.
 
 ## Run Local LLMs with Ollama and Obsidian configuration
 
