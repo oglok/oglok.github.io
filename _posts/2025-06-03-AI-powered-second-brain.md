@@ -86,6 +86,10 @@ As a practical experiment, `llama3.2` was asked to calculate the average cost pe
 2. Assumed 100 cups per kilogram.
 3. Delivered an accurate, reasoned answer.
 
+Look at the screenshot:
+
+![Coffee cost prompt](/img/second-brain/coffee-question.png "Coffee prompt")
+
 ## Key Findings
 
 | Area                      | Result                                                        |
