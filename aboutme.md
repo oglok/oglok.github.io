@@ -4,8 +4,8 @@ title: About me
 subtitle: Who's this guy!
 ---
 
-My name is Ricardo Noriega. I work as NFV Engineer for the CTO Office at Red Hat.
-I'm passionate about emerging technologies & OpenSource.
+My name is Ricardo Noriega. I am the Edge Computing Team Lead at Red Hat's Office of the CTO.
+I'm passionate about emerging technologies & open source technology.
 
 What do I do to feed my soul?
 
@@ -18,5 +18,5 @@ What do I do to feed my body?
 - Snowboard
 - Good food! :)
 
-I love my girlfriend, my family and my friends... whatelse?
+I love my wife, my two kids, my family and my friends... whatelse?
 
